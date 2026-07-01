@@ -1,0 +1,16 @@
+site_name: Anshuman Singh Portfolio
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+
+  - LetsDefend:
+      - SOC001: letsdefend/sec001.md
+      - SOC002: letsdefend/sec002.md
+  - Malware-Analysis:
+      - First: malware-analysis/anal.md
+  - Blog: 
+      - b01: blog/firstblog.md
+  - About: Anshu.md
