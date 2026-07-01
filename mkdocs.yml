@@ -1,8 +1,13 @@
-site_name: Anshuman Singh Portfolio
+site_name: VRITRA-XD | SOC Analyst Portfolio
+site_description: SOC Analyst, Detection Engineering and Malware Analysis
+site_author: Anshuman Singh
 
 theme:
   name: material
-
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: cyan
 nav:
   - Home: index.md
 
