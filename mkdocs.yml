@@ -4,18 +4,53 @@ site_author: Anshuman Singh
 
 theme:
   name: material
+
   palette:
     - scheme: slate
       primary: blue
       accent: cyan
+
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 nav:
   - Home: index.md
 
   - LetsDefend:
       - SOC001: letsdefend/sec001.md
       - SOC002: letsdefend/sec002.md
-  - Malware-Analysis:
+
+  - Malware Analysis:
       - First: malware-analysis/anal.md
-  - Blog: 
-      - b01: blog/firstblog.md
+
+  - Blog:
+      - Blog 1: blog/firstblog.md
+
   - About: Anshu.md
